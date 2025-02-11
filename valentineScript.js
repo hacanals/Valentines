@@ -49,14 +49,14 @@ function flashRainbowColors(callback) {  // callback allows a function to be pas
 function displayCat() {
 
     document.getElementById('image-container').innerHTML = '';
-    var imageConatiner = document.getElementById('image-container');
+    var imageContainer = document.getElementById('image-container');
 
     var catImage = new Image();
     catImage.src = 'cat.gif';
     catImage.alt = 'Cat';           
     
     catImage.onLoad = function() {
-        imageConatiner.appendChild(catImage);
+        imageContainer.appendChild(catImage);
     };
 } 
 
@@ -64,7 +64,7 @@ function displayCat() {
 function displayCatHeart() {
     
     document.getElementById('image-container').innerHTML = '';
-    var imageContainer = document.getElementById('image-conatiner');
+    var imageContainer = document.getElementById('image-container');
 
     var catHeartImage = new Image();
     catHeartImage.src = 'cat-heart.gif';
