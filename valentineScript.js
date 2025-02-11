@@ -70,7 +70,7 @@ function displayCatHeart() {
     catHeartImage.src = 'cat-heart.gif';
     catHeartImage.alt = 'Cat with a heart';
 
-    catHeartImage.onload = function() {
+    catHeartImage.onLoad = function() {
         imageContainer.appendChild(catHeartImage);
         document.getElementById('options').style.display = 'none';
     };
