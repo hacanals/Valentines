@@ -15,7 +15,12 @@ body {
 }
 
 #image-container {
-    image-rendering: crisp-edges;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px;
 }
 
 #question {
