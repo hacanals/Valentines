@@ -32,6 +32,10 @@ body {
     margin-top: 20px; /* Add space above the options */
 }
 
+#yes-button {
+    transition: font-size 0.3s ease-in-out;
+}
+
 button {
     padding: 10px 20 px;
     margin: 0 10px; /* Set margin around buttons */
