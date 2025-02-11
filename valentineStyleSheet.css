@@ -6,7 +6,7 @@ body {
     background-image:linear-gradient(to bottom right, #fadadd, white);
 }
 
-#contatiner {
+#container {
     display: flex; /* Flexbox layout */
     flex-direction: column; /* Stacks elements veritcally */
     align-items: center; /* aligns items horizontally */
