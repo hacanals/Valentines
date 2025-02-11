@@ -11,10 +11,8 @@ function selectOption(option) {
         document.getElementById('options').style.display = 'none';
 
         // Show the cat heart immediately
-        displayCatHeart();
-
         // Start flashing colors in the background
-        flashRainbowColors();
+        setTimeout(displayCatHeart, 200);
     } else if (option === 'no') {
         var noButton = document.getElementById('no-button');
         var yesButton = document.getElementById('yes-button'); 
