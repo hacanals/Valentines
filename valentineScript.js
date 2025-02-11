@@ -3,6 +3,9 @@
 // else if button is no, ask if they are sure, and if yes, increase yes button by 2
 function selectOption(option) {
     if (option === 'yes') {
+        
+        flashRainbowColors();
+        
         // Hide question instantly
         document.getElementById('question').style.display = 'none';
         document.getElementById('options').style.display = 'none';
