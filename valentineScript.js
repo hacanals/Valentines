@@ -3,11 +3,15 @@
 // else if button is no, ask if they are sure, and if yes, increase yes button by 2
 function selectOption(option) {
     if (option === 'yes') {
-        flashRainbowColors(function() {
-            document.getElementById('question').style.display = 'none';
-            displayCatHeart(); // Calls cat heart function
-        });
+        // Hide question instantly
+        document.getElementById('question').style.display = 'none';
+        document.getElementById('options').style.display = 'none';
 
+        // Show the cat heart immediately
+        displayCatHeart();
+
+        // Start flashing colors in the background
+        flashRainbowColors();
     } else if (option === 'no') {
         var noButton = document.getElementById('no-button');
         var yesButton = document.getElementById('yes-button'); 
@@ -15,7 +19,6 @@ function selectOption(option) {
         if (noButton.innerText === 'No') {
             noButton.innerText = 'You sure?';
         } else {
-            // Increase Yes button size
             var currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
             var newSize = parseFloat(currentFontSize) * 2;
             yesButton.style.fontSize = newSize + 'px';
