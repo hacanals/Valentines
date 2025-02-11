@@ -55,7 +55,7 @@ function displayCat() {
     catImage.src = 'cat.gif';
     catImage.alt = 'Cat';           
     
-    catImage.onLoad = function() {
+    catImage.onload = function() {
         imageContainer.appendChild(catImage);
     };
 } 
@@ -70,7 +70,7 @@ function displayCatHeart() {
     catHeartImage.src = 'cat-heart.gif';
     catHeartImage.alt = 'Cat with a heart';
 
-    catHeartImage.onLoad = function() {
+    catHeartImage.onload = function() {
         imageContainer.appendChild(catHeartImage);
         document.getElementById('options').style.display = 'none';
     };
