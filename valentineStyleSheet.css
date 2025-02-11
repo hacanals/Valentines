@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #fadadd;
+    background-image:linear-gradient(to bottom right, #fadadd, white);
+}
+
+#contatiner {
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stacks elements veritcally */
+    align-items: center; /* aligns items horizontally */
+    justify-content: center; /* aligns items veritcally */
+    height: 100vh; /* Make the container full viewport height */
+}
+
+#image-container {
+    image-rendering: crisp-edges;
+}
+
+#question {
+    font-family: 'Sacramento', cursive;
+    font-size: 52px;
+}
+
+#options {
+    margin-top: 20px; /* Add space above the options */
+}
+
+button {
+    padding: 10px 20 px;
+    margin: 0 10px; /* Set margin around buttons */
+    font-size: 26px;
+    font-family: 'Sacramento', cursive;
+    background-color: #fb607f;
+    color: white;
+    border: none; /* Removes button border */
+    cursor: pointer;
+}
